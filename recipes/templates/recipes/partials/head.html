@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/fontawesome.min.css"
+        integrity="sha512-aP4LyQwPu7DAUAgYHVE2zZ0ZG02lDMcWtIsMG1H6VhvPICHEgy2RqF0igO8kCz+EuHmoxLekNvddm3g5VuPNfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/brands.min.css"
+        integrity="sha512-9klWNy/fjh4XVpd8qMsqavcvhfb/ltKN3MYwT127TsxwWiJWl183vRinW2yvznVJ5u0Nhcc1YDQvCoPtfh+p/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/solid.min.css"
+        integrity="sha512-tV3c+iJzGidd69IJMf3x0vbXQ+0D1YxLL/ze0Cun2WBBNdMjLuQtBTQM/8wnnLmgiEeefZeTtKUZ5bTp3+VpTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+
+    <title>Recipes</title>
+
+    <style>
+        :root {
+            --font-primary: sans-serif;
+            --font-headings: 'Roboto Slab', serif;
+            --spacing-gutter-large: 4rem;
+            --spacing-gutter-medium: 3rem;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            font-family: var(--font-primary);
+            background: rgb(65, 61, 61);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: var(--font-headings);
+        }
+
+        .container {
+            max-width: 144rem;
+
+            margin: 0 auto;
+            padding: var(--spacing-gutter-medium);
+        }
+
+        .main-header-container {
+
+            background: #13141f;
+        }
+
+        .main-logo {
+
+            font-size: 4rem;
+            color: azure;
+            text-decoration: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .main-logo-icon {
+            margin-right: 2rem;
+        }
+
+        .search-form {
+            border: .2rem solid black;
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0.5rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input {
+            width: 95%;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-button :focus {
+            outline: 1px solid red;
+            background: #040511;
+        }
+
+        .search-form:focus-within {
+            border-color: #dbcc27;
+            background: white;
+        }
+
+        .search-form:focus-within {
+            border-color: aliceblue;
+        }
+
+        .main-content {
+            padding-top: 0;
+            background: rgb(65, 61, 61);
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+            gap: 20px 20px;
+        }
+
+        .recipe {
+            background: rgb(236, 228, 228);
+            box-shadow: -5px 5px 15px rgb(20, 5, 24);
+            transition: all 300ms ease-in-out;
+            transform: scale(1);
+        }
+
+        .recipe img {
+            max-width: 100%;
+        }
+
+        .recipe-list-item {
+            max-width: 64rem;
+        }
+
+        .recipe-list-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
